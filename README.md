@@ -47,83 +47,45 @@ You can retrieve a list of all General Categories like this:
 
 ```ruby
 require "unicode/categories"
-puts Unicode::Categories.names
-
-# # # Output # # #
-
-Cc
-Cf
-Cn
-Co
-Cs
-LC
-Ll
-Lm
-Lo
-Lt
-Lu
-Mc
-Me
-Mn
-Nd
-Nl
-No
-Pc
-Pd
-Pe
-Pf
-Pi
-Po
-Ps
-Sc
-Sk
-Sm
-So
-Zl
-Zp
-Zs
+puts \
+  "Short | Long\n" +
+  "------|-----\n" +
+  Unicode::Categories.names(format: :table).to_a.map{ |r| "   %s | %s" % r }.join("\n")
 ```
 
-You get a list of long names with:
-
-```ruby
-require "unicode/categories"
-puts Unicode::Categories.names(format: :long)
-
-# # # Output # # #
-
-Cased_Letter
-Close_Punctuation
-Connector_Punctuation
-Control
-Currency_Symbol
-Dash_Punctuation
-Decimal_Number
-Enclosing_Mark
-Final_Punctuation
-Format
-Initial_Punctuation
-Letter_Number
-Line_Separator
-Lowercase_Letter
-Math_Symbol
-Modifier_Letter
-Modifier_Symbol
-Nonspacing_Mark
-Open_Punctuation
-Other_Letter
-Other_Number
-Other_Punctuation
-Other_Symbol
-Paragraph_Separator
-Private_Use
-Space_Separator
-Spacing_Mark
-Surrogate
-Titlecase_Letter
-Unassigned
-Uppercase_Letter
-```
+Short | Long
+------|-----
+   Cc | Control
+   Cf | Format
+   Cn | Unassigned
+   Co | Private_Use
+   Cs | Surrogate
+   LC | Cased_Letter
+   Ll | Lowercase_Letter
+   Lm | Modifier_Letter
+   Lo | Other_Letter
+   Lt | Titlecase_Letter
+   Lu | Uppercase_Letter
+   Mc | Spacing_Mark
+   Me | Enclosing_Mark
+   Mn | Nonspacing_Mark
+   Nd | Decimal_Number
+   Nl | Letter_Number
+   No | Other_Number
+   Pc | Connector_Punctuation
+   Pd | Dash_Punctuation
+   Pe | Close_Punctuation
+   Pf | Final_Punctuation
+   Pi | Initial_Punctuation
+   Po | Other_Punctuation
+   Ps | Open_Punctuation
+   Sc | Currency_Symbol
+   Sk | Modifier_Symbol
+   Sm | Math_Symbol
+   So | Other_Symbol
+   Zl | Line_Separator
+   Zp | Paragraph_Separator
+   Zs | Space_Separator
 
 ## MIT License
 
