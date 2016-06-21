@@ -2,7 +2,7 @@
 
 Returns which [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category) a Unicode string contains.
 
-Unicode version: **8.0.0**
+Unicode version: **9.0.0**
 
 Supported Rubies: **2.3**, **2.2**, **2.1**
 

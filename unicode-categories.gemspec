@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.name          = "unicode-categories"
   gem.version       = Unicode::Categories::VERSION
   gem.summary       = "Determine the Unicode General Categories of a string."
-  gem.description   = "[Unicode version: #{Unicode::Categories::UNICODE_VERSION}] Determine which Unicode General Categories a string belongs to."
+  gem.description   = "[Unicode #{Unicode::Categories::UNICODE_VERSION}] Determine which Unicode General Categories a string belongs to."
   gem.authors       = ["Jan Lelis"]
   gem.email         = ["mail@janlelis.de"]
   gem.homepage      = "https://github.com/janlelis/unicode-categories"
