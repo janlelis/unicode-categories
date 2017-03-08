@@ -14,7 +14,7 @@ module Unicode
 
     def self.category(char, format: :short)
       require_relative 'categories/index' unless defined? ::Unicode::Categories::INDEX
-      codepoint_depth_offset = char.unpack("U")[0] or
+      codepoint_depth_offset = char.ord or
           raise(ArgumentError, "Unicode::Categories.category must be given a valid char")
       index_or_value = INDEX[:CATEGORIES]
       [0x10000, 0x1000, 0x100, 0x10].each{ |depth|
