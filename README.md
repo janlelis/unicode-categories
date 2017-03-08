@@ -4,7 +4,7 @@ Returns which [General Categories](https://en.wikipedia.org/wiki/Unicode_charact
 
 Unicode version: **9.0.0**
 
-Supported Rubies: **2.3**, **2.2**, **2.1**
+Supported Rubies: **2.4**, **2.3**, **2.2**, **2.1**
 
 ## Gemfile
 
@@ -91,6 +91,6 @@ See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related 
 
 ## MIT License
 
-- Copyright (C) 2016 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+- Copyright (C) 2016-2017 Jan Lelis <http://janlelis.com>. Released under the MIT license.
 - Unicode data: http://www.unicode.org/copyright.html#Exhibit1
 
