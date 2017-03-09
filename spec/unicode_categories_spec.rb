@@ -39,6 +39,7 @@ describe Unicode::Categories do
 
     it "will return Cn for unassigned codepoints" do
       assert_equal "Cn", Unicode::Categories.category("\u{10c50}")
+      assert_equal "Cn", Unicode::Categories.category("\u{e01f0}")
     end
   end
 
