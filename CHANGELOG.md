@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.2.0
+
+- Unicode 10
+
 ### 1.1.2
 
 - Fix bug that would wrongly assign unassigned codepoints to a category (but larger index size...)
@@ -14,5 +18,5 @@
 
 ### 1.0.0
 
-- Iniital release
+- Initial release
 
