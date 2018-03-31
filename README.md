@@ -4,9 +4,9 @@ Returns which [General Categories](https://en.wikipedia.org/wiki/Unicode_charact
 
 Unicode version: **10.0.0**
 
-Supported Rubies: **2.5**, **2.4**, **2.3**, **2.2**
+Supported Rubies: **2.5**, **2.4**, **2.3**
 
-Old Rubies that might still work: **2.1**, **2.0**
+Old Rubies that might still work: **2.2**, **2.1**, **2.0**
 
 ## Gemfile
 
@@ -24,7 +24,7 @@ Unicode::Categories.categories("A 2") # => ["Lu", "Nd", "Zs"]
 Unicode::Categories.categories("A 2", format: :long)
 # => ["Decimal_Number", "Space_Separator", "Uppercase_Letter"]
 
-# Also aliased as .of 
+# Also aliased as .of
 Unicode::Categories.of("\u{10c50}") # => ["Cn"]
 
 # Single character
@@ -93,6 +93,6 @@ See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related 
 
 ## MIT License
 
-- Copyright (C) 2016-2017 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+- Copyright (C) 2016-2018 Jan Lelis <http://janlelis.com>. Released under the MIT license.
 - Unicode data: http://www.unicode.org/copyright.html#Exhibit1
 
