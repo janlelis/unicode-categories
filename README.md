@@ -1,10 +1,10 @@
-# Unicode::Categories [![[version]](https://badge.fury.io/rb/unicode-categories.svg)](http://badge.fury.io/rb/unicode-categories)  [![[travis]](https://travis-ci.org/janlelis/unicode-categories.png)](https://travis-ci.org/janlelis/unicode-categories)
+# Unicode::Categories [![[version]](https://badge.fury.io/rb/unicode-categories.svg)](https://badge.fury.io/rb/unicode-categories)  [![[travis]](https://travis-ci.org/janlelis/unicode-categories.png)](https://travis-ci.org/janlelis/unicode-categories)
 
 Returns which [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category) a Unicode string contains.
 
 Unicode version: **11.0.0**
 
-Supported Rubies: **2.5**, **2.4**, **2.3**
+Supported Rubies: **2.6**, **2.5**, **2.4**, **2.3**
 
 Old Rubies that might still work: **2.2**, **2.1**, **2.0**
 
