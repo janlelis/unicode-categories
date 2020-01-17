@@ -1,6 +1,6 @@
 # Unicode::Categories [![[version]](https://badge.fury.io/rb/unicode-categories.svg)](https://badge.fury.io/rb/unicode-categories)  [![[travis]](https://travis-ci.org/janlelis/unicode-categories.png)](https://travis-ci.org/janlelis/unicode-categories)
 
-Returns which [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category) a Unicode string contains.
+Returns a list which [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category) a Unicode string belongs to.
 
 Unicode version: **12.1.0** (May 2019)
 
@@ -37,7 +37,7 @@ The list of categories is always sorted alphabetically.
 
 ### Regex Matching
 
-If you have a string and want to match a substring/character from a specific Unicode block, you actually won't need this gem. Instead, you can use the [Regexp Unicode Property Syntax `\p{}`](http://ruby-doc.org/core/Regexp.html#class-Regexp-label-Character+Properties):
+If you have a string and want to match a substring/character from a specific Unicode block, you actually won't need this gem. Instead, you can use the [Regexp Unicode Property Syntax `\p{}`](https://ruby-doc.org/core/Regexp.html#class-Regexp-label-Character+Properties):
 
 ```ruby
 "Find decimal numbers (like 2 or 3) within a string".scan(/\p{Nd}+/) # => ["2", "3"]
