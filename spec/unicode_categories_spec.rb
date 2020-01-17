@@ -23,8 +23,14 @@ describe Unicode::Categories do
 
     it "will call .category for every character" do
       mocked_method = MiniTest::Mock.new
-      mocked_method.expect :call, "first category",  ["A", {}]
-      mocked_method.expect :call, "second category", ["2", {}]
+      if RUBY_VERSION >= "2.7"
+        mocked_method.expect :call, "first category",  ["A"]
+        mocked_method.expect :call, "second category", ["2"]
+      else
+        mocked_method.expect :call, "first category",  ["A", {}]
+        mocked_method.expect :call, "second category", ["2", {}]
+      end
+
       Unicode::Categories.stub :category, mocked_method do
         Unicode::Categories.of("A2")
       end 
