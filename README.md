@@ -1,4 +1,4 @@
-# Unicode::Categories [![[version]](https://badge.fury.io/rb/unicode-categories.svg)](https://badge.fury.io/rb/unicode-categories)  [![[travis]](https://travis-ci.org/janlelis/unicode-categories.png)](https://travis-ci.org/janlelis/unicode-categories)
+# Unicode::Categories [![[version]](https://badge.fury.io/rb/unicode-categories.svg)](https://badge.fury.io/rb/unicode-categories)  [![[ci]](https://github.com/janlelis/unicode-categories/workflows/Test/badge.svg)](https://github.com/janlelis/unicode-categories/actions?query=workflow%3ATest)
 
 Returns a list which [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category) a Unicode string belongs to.
 
