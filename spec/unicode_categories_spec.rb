@@ -21,21 +21,23 @@ describe Unicode::Categories do
       assert_equal ["Lu", "Nd"], Unicode::Categories.of("2A")
     end 
 
-    it "will call .category for every character" do
-      mocked_method = MiniTest::Mock.new
-      if RUBY_VERSION >= "2.7"
-        mocked_method.expect :call, "first category",  ["A"]
-        mocked_method.expect :call, "second category", ["2"]
-      else
-        mocked_method.expect :call, "first category",  ["A", {}]
-        mocked_method.expect :call, "second category", ["2", {}]
-      end
+    if RUBY_ENGINE != "jruby"
+      it "will call .category for every character" do
+        mocked_method = MiniTest::Mock.new
+        if RUBY_VERSION >= "2.7"
+          mocked_method.expect :call, "first category",  ["A"]
+          mocked_method.expect :call, "second category", ["2"]
+        else
+          mocked_method.expect :call, "first category",  ["A", {}]
+          mocked_method.expect :call, "second category", ["2", {}]
+        end
 
-      Unicode::Categories.stub :category, mocked_method do
-        Unicode::Categories.of("A2")
-      end 
-      mocked_method.verify
-    end 
+        Unicode::Categories.stub :category, mocked_method do
+          Unicode::Categories.of("A2")
+        end
+        mocked_method.verify
+      end
+    end
   end
 
   describe ".category" do
