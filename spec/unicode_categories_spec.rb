@@ -23,7 +23,7 @@ describe Unicode::Categories do
 
     if RUBY_ENGINE != "jruby"
       it "will call .category for every character" do
-        mocked_method = MiniTest::Mock.new
+        mocked_method = Minitest::Mock.new
         if RUBY_VERSION >= "2.7"
           mocked_method.expect :call, "first category",  ["A"]
           mocked_method.expect :call, "second category", ["2"]
