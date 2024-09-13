@@ -2,7 +2,7 @@
 
 Returns a list which [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category) a Unicode string belongs to.
 
-Unicode version: **15.1.0** (September 2023)
+Unicode version: **16.0.0** (September 2024)
 
 Supported Rubies: **3.3**, **3.2**, **3.1**, **3.0**
 
