@@ -2,7 +2,7 @@
 
 Returns a list which [General Categories](https://en.wikipedia.org/wiki/Unicode_character_property#General_Category) a Unicode string belongs to.
 
-Unicode version: **16.0.0** (September 2024)
+Unicode version: **17.0.0** (September 2025)
 
 ## Gemfile
 
