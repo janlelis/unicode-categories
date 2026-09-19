@@ -2,7 +2,7 @@
 
 module Unicode
   module Categories
-    VERSION = "1.11.0"
+    VERSION = "1.12.0"
     UNICODE_VERSION = "18.0.0"
     DATA_DIRECTORY = File.expand_path(File.dirname(__FILE__) + "/../../../data/").freeze
     INDEX_FILENAME = (DATA_DIRECTORY + "/categories.marshal.gz").freeze
