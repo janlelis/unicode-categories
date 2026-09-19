@@ -1,5 +1,6 @@
 require_relative "../lib/unicode/categories"
 require "minitest/autorun"
+require "minitest/mock"
 
 describe Unicode::Categories do
   describe ".categories (alias .of)" do
